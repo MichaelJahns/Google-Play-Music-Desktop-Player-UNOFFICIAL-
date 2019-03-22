@@ -102,6 +102,9 @@ const setContextMenu = (track) => {
       },
     },
     { type: 'separator' },
+    
+    // Toggle View Hotkey needs to mimic this action
+    // Sort of. The hotkey is supposed to toggle view, the below will only bring it into focus it wont blur
     { label: TranslationProvider.query('tray-label-show'),
       click: () => {
         mainWindow.setSkipTaskbar(false);

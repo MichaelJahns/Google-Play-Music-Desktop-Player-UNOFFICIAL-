@@ -39,6 +39,7 @@ class HotkeyInput extends Component {
       'infoTrack',
       'imFeelingLucky',
       'toggleRepeat',
+      'toggleView',
     ]).isRequired,
     hotkeys: PropTypes.object.isRequired,
     setSetting: PropTypes.func.isRequired,

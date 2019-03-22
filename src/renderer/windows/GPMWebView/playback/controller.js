@@ -1,4 +1,5 @@
 import { remote } from 'electron';
+import { EditorFormatListNumbered } from 'material-ui/svg-icons';
 
 let mode;
 window.wait(() => {
@@ -98,3 +99,7 @@ Emitter.on('playback:imFeelingLucky', () => {
 Emitter.on('playback:toggleRepeat', () => {
   window.GPM.playback.toggleRepeat();
 });
+// I think if I understand the organization properly, this is the where the event handler should be
+Editter.on('playback:toggleView', () => {
+  //toggle view state
+})
